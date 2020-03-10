@@ -1,6 +1,6 @@
 class Patient
   @@all = []
-  attr_accessor :doctorm, :date, 
+  attr_accessor :doctorm, :date
   
   
   def initialize(name)
@@ -17,7 +17,7 @@ class Patient
   end 
   
   def appointments
-    # Appointment.all.select{|apppointments| appointments.patient == self}
+    Appointment.all.select{|apppointments| appointments.patient == self}
   end 
 
 
