@@ -18,7 +18,7 @@ class Patient
  end 
  
   def appointments 
-    Appointment.all.collect{|appointments| binding.pry appointments.patient == self}
+    Appointment.all.select{|appointments| binding.pry appointments.patient == self}
   end 
   
   def doctors 
